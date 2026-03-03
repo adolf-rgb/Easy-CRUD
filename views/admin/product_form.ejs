@@ -1,0 +1,17 @@
+<form method="POST" action="/XX_module_b/products/save" enctype="multipart/form-data">
+<select name="company_id" class="form-select mb-2">
+<% companies.forEach(c=>{ %><option value="<%=c.id%>"><%=c.name%></option><%}) %>
+</select>
+<input name="name_en" placeholder="Name EN" class="form-control mb-2">
+<input name="name_fr" placeholder="Name FR" class="form-control mb-2">
+<textarea name="description_en" class="form-control mb-2"></textarea>
+<textarea name="description_fr" class="form-control mb-2"></textarea>
+<input name="gtin" placeholder="GTIN" class="form-control mb-2">
+<input name="brand" placeholder="Brand" class="form-control mb-2">
+<input name="country" placeholder="Country" class="form-control mb-2">
+<input name="gross_weight" placeholder="Gross Weight" class="form-control mb-2">
+<input name="net_weight" placeholder="Net Weight" class="form-control mb-2">
+<input name="weight_unit" placeholder="Unit" class="form-control mb-2">
+<input type="file" name="image" class="form-control mb-2">
+<button class="btn btn-primary">Save</button>
+</form>
