@@ -1,0 +1,13 @@
+<h2>Products</h2>
+<a href="/XX_module_b/products/new" class="btn btn-primary mb-2">New Product</a>
+<ul class="list-group">
+<% products.forEach(p => { %>
+<li class="list-group-item d-flex justify-content-between">
+    <span><%= p.name_en %> (<%= p.gtin %>)</span>
+    <div>
+        <a href="/XX_module_b/products/hide/<%= p.id %>" class="btn btn-warning btn-sm">Hide</a>
+        <a href="/XX_module_b/products/delete/<%= p.id %>" class="btn btn-danger btn-sm">Delete</a>
+    </div>
+</li>
+<% }) %>
+</ul>
