@@ -1,0 +1,10 @@
+<h2>Companies</h2>
+<a href="/XX_module_b/companies/new" class="btn btn-primary mb-2">New Company</a>
+<ul class="list-group">
+<% companies.forEach(c => { %>
+<li class="list-group-item d-flex justify-content-between">
+    <span><%= c.name %></span>
+    <a href="/XX_module_b/companies/deactivate/<%= c.id %>" class="btn btn-danger btn-sm">Deactivate</a>
+</li>
+<% }) %>
+</ul>
